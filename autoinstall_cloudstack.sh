@@ -38,7 +38,7 @@ function install_common() {
     setenforce permissive
     echo "[cloudstack]
 name=cloudstack
-baseurl=http://cloudstack.apt-get.eu/rhel/4.5/
+baseurl=http://cloudstack.apt-get.eu/rhel/6/4.9/
 enabled=1
 gpgcheck=0" > /etc/yum.repos.d/CloudStack.repo
     sed -i -e "s/localhost/$HOSTNAME localhost/" /etc/hosts
